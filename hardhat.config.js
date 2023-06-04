@@ -15,9 +15,9 @@ const {
 module.exports = {
    defaultNetwork: 'hardhat',
 
-   etherscan: {
-      apiKey: API_KEY_MUMBAI,
-   },
+   // etherscan: {
+   //    apiKey: API_KEY_MUMBAI,
+   // },
    networks: {
       hardhat: {},
 
