@@ -33,6 +33,7 @@ Token1 deployed to : 0x8Aa19fe52C17DE4ebEdb3A3ab8D003Da2275ECc3
 Token2 deployed to : 0x4240d0726235ADd588eEaD9fA4bCd7579935475b
 
 
+```
 npx hardhat verify --contract "contracts/Token.sol:Token" --network mumbai 0xeb0e5750EEDED5B943097e9E2A148AF7318Ce5Ae
 
 npx hardhat verify --contract "contracts/WETH.sol:WETH" --network mumbai 0xDaAC615dfD49824095Cc6C213b2A34032b949614
@@ -42,3 +43,5 @@ npx hardhat verify --contract "contracts/core/UniswapV2Factory.sol:UniswapV2Fact
 npx hardhat verify --contract "contracts/periphery/UniswapV2Router02.sol:UniswapV2Router02" --network mumbai 0x349Ac8CDE4e7736D1daaf2E38F3FF26059100621
 
 npx hardhat verify --contract "contracts/Multicall.sol:Multicall" --network mumbai 0x925460c8ce98d1F5EF99c0f6006ECeb00c615e4F
+
+```
