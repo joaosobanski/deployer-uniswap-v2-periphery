@@ -9,23 +9,31 @@ const {
    PRIVATE_KEY,
    API_KEY_MUMBAI,
    API_KEY_ARBITRUM,
+   API_KEY_FUJI,
    API_KEY_BSCTESTNET,
 } = process.env;
 
 module.exports = {
    defaultNetwork: 'hardhat',
 
-   // etherscan: {
-   //    apiKey: API_KEY_MUMBAI,
-   // },
+   etherscan: {
+      apiKey: {
+         // bsc: API_KEY_BSCSCAN,
+         // bscTestnet: API_KEY_BSCTESTNET,
+         polygonMumbai: API_KEY_MUMBAI,
+         // arbitrumOne: API_KEY_ARBITRUM,
+      }
+   },
    networks: {
       hardhat: {},
 
       mumbai: {
          url: 'https://matic-mumbai.chainstacklabs.com',
          accounts: [PRIVATE_KEY],
-         // gasPrice: 1750809638,
-         // chainId: 16163,
+      },
+      fuji: {
+         url: 'https://api.avax-test.network/ext/bc/C/rpc',
+         accounts: [PRIVATE_KEY],
       },
       dev: {
          url: 'http://127.0.0.1:7545',
